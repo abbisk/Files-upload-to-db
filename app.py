@@ -100,4 +100,6 @@ def query():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host= app.config.get("Host","localhost"),
+            port= app.config.get("Port", 9000),
+            debug=True)
