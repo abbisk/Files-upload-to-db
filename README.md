@@ -1,4 +1,4 @@
-# Image-upload-to-db
+# Files-upload-to-db
 Flask app to upload/download PDF/Image/Word in Database using Sqlite3
 
 # Quick Setup
