@@ -72,8 +72,8 @@ def database(name, data):
     conn= sqlite3.connect("ABC.db")
     cursor = conn.cursor()
 
-    cursor.execute("""CREATE TABLE IF NOT EXISTS my_table (name TEXT,data BLOP) """)
-    cursor.execute("""INSERT INTO my_table (name, data) VALUES (?,?) """,(name,data))
+    cursor.execute("""CREATE TABLE IF NOT EXISTS my_data (name TEXT,data BLOP) """)
+    cursor.execute("""INSERT INTO my_data (name, data) VALUES (?,?) """,(name,data))
 
     conn.commit()
     cursor.close()
